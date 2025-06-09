@@ -1,8 +1,11 @@
 import React from "react";
+import Header from "./Components/RootLyout/Header";
 
 const App = () => {
   return (
-    <div className="bg-accentRed container mx-auto font-poppins ">app</div>
+    <div>
+      <Header />
+    </div>
   );
 };
 
