@@ -1,11 +1,14 @@
 import React from "react";
-import Header from "./Components/RootLyout/Header";
+import { Route, Link, Routes, BrowserRouter } from "react-router-dom";
+import Home from "./Pages/Home/Home";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

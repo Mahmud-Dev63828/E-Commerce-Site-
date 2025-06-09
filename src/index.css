@@ -41,3 +41,56 @@
   --font-inter: var(--inter);
   --font-poppins: var(--poppins);
 }
+
+.menuUnderLine {
+  position: relative;
+}
+.menuUnderLine::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--textMuted);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+.menuUnderLine:hover::after {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.amount {
+  position: relative;
+}
+.amount::after {
+  position: absolute;
+  content: "0";
+  left: 39%;
+  top: -52%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: var(--accentRed);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  color: var(--white);
+  font-size: 15px;
+}
