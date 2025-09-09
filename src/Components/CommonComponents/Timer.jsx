@@ -5,7 +5,7 @@ const Timer = () => {
   const [time, settime] = useState(3 * 24 * 60 * 60 * 1000 || 0);
   useEffect(() => {
     const worker = new Worker(
-      new URL("../../CountDownWorker.js", import.meta.url)
+      new URL("../../worker/CountDownWorker.js", import.meta.url)
     );
     worker.postMessage(time);
     worker.onmessage = (e) => {

@@ -67,7 +67,7 @@ const ProductCommonLayout = ({
 
   return (
     <div className="mt-[140px] mb-[60px] ">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div className="flex flex-col sm:flex-row   gap-y-3 sm:items-end  sm:gap-x-[87px]">
             <Heading title={heading} description={description} />

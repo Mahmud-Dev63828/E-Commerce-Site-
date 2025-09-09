@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { category } from "../../../Data/Data";
+import { category } from "../../../../Data/Data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Bannerimg from "../../assets/Banner/banner.jpg";
+import Bannerimg from "../../../assets/Banner/banner.jpg";
 import { LiaAngleRightSolid } from "react-icons/lia";
 
 const Banner = () => {
