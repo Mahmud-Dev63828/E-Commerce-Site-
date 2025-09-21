@@ -8,7 +8,7 @@ import { CiTwitter } from "react-icons/ci";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="pt-20 bg-text_black000000">
+    <div className="pt-20 bg-textPrimary">
       <div className="container">
         <div className="flex justify-between items-start pb-20">
           <div className="text-white flex flex-col items-start gap-y-4">
