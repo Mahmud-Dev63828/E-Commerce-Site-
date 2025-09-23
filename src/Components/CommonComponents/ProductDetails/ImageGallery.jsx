@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+import "react-inner-image-zoom/lib/styles.min.css";
 import InnerImageZoom from "react-inner-image-zoom";
 import { useParams } from "react-router-dom";
 const ImageGallery = ({ image }) => {

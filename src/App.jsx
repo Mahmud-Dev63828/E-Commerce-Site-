@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import { RootMainLayout } from "./Components/RootLyout/RootmainLayout";
 import ProductPage from "./Pages/Product/Index";
 import ProductDetails from "./Pages/ProductDetails/Index";
+import Login from "./Pages/auth/Login/Login";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             path="/productdetails/:id"
             element={<ProductDetails />}
           ></Route>
+          <Route path="/login" element={<Login />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

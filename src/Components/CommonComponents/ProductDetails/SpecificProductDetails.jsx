@@ -1,5 +1,5 @@
 import React from "react";
-import Star from "../../CommonCoponents/Star";
+import Star from "../../CommonComponents/Star";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { TbTruckDelivery } from "react-icons/tb";
 import useCalculateDiscount from "../../../hooks/useCalculateDiscount";

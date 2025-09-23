@@ -1,17 +1,17 @@
 import React from "react";
-import { BreadCrumb } from "../../components/";
-import ImageGallery from "../../components/CommonCoponents/ProductDetails/ImageGallery";
+import { BreadCrumb } from "../../Components/CommonComponents/BreadCrumb.jsx";
+import ImageGallery from "../../Components/CommonComponents/ProductDetails/ImageGallery";
 
-import SpecificProductDetails from "../../components/CommonCoponents/ProductDetails/SpecificProductDetails.jsx";
+import SpecificProductDetails from "../../Components/CommonComponents/ProductDetails/SpecificProductDetails.jsx";
 import { useParams } from "react-router-dom";
-import ProductDetailsSkeletion from "../../components/Skeletion/ProductDetailsSkeletion.jsx";
-import Heading from "../../components/CommonCoponents/Heading.jsx";
+import ProductDetailsSkeletion from "../../Components/Skeletion/ProductDetailsSkeletion.jsx";
+import Heading from "../../Components/CommonComponents/Heading.jsx";
 import Slider from "react-slick";
 import {
   useGetSingleProductQuery,
   useGetProductByCategoryQuery,
 } from "../../Features/Api/ProductApi.js";
-import ProductCard from "../../components/CommonCoponents/ProductCard.jsx";
+import ProductCard from "../../components/CommonComponents/ProductCard.jsx";
 const ProductDetails = () => {
   const params = useParams();
   const { data, error, isLoading } = useGetSingleProductQuery(
